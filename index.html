@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quine-McCluskey Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ứng Dụng Rút Gọn Biểu Thức Logic</h1>
+        <p class="subtitle">Sử dụng Giải thuật Quine-McCluskey</p>
+
+        <div class="input-group">
+            <label for="variables">Số lượng biến (VD: 3 hoặc 4):</label>
+            <input type="number" id="variables" min="1" max="10" placeholder="Nhập số biến...">
+        </div>
+
+        <div class="input-group">
+            <label for="minterms">Các minterm (cách nhau bởi dấu phẩy, VD: 0,1,3,7):</label>
+            <input type="text" id="minterms" placeholder="Nhập các minterm (m)...">
+        </div>
+
+        <button id="solve-btn">Rút gọn biểu thức</button>
+
+        <div class="result-area">
+            <h3>Kết quả:</h3>
+            <div id="result-output">
+                <p class="placeholder-text">Vui lòng nhập dữ liệu và nhấn "Rút gọn".</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="logic_engine.js"></script>
+<script src="script.js"></script>
